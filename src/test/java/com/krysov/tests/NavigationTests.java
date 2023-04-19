@@ -16,16 +16,6 @@ public class NavigationTests extends TestBase {
         Configuration.browserSize = "1920x1080";
     }
 
-    @Test
-    void checkFormTest() {
-        open("https://og1.ru/");
-        $("#menu-item-455").click();
-        $("#inputName-1", 0).setValue("Алексей");
-        $("#inputMail-1", 0).setValue("krysov-95@mail.ru");
-        $("[name='phone_number']").setValue("9609898725");
-        $(".select-class-number", 0).selectOption("9 класс");
-        $(".col-12.col-lg-6.col-xl-5.form-training__rules", 0).shouldHave(text("Нажимая на кнопку, я принимаю условия "));
-    }
 
     @Test
     void checkFormTestPositive() {
@@ -38,5 +28,45 @@ public class NavigationTests extends TestBase {
         checkPage.checkResponse();
     }
 
-}
+    @Test
+    void checkFormTestIncorrectName() {
+        openPage.openOg1Page();
+        navigationPage.goToLearningFormat();
+        inputData.inputName();
+        inputData.inputEmail();
+        inputData.inputPhoneNumber();
+        inputData.selectClass();
+        checkPage.checkResponse();
+    }
 
+    @Test
+    void checkFormTestIncorrectEmail() {
+        openPage.openOg1Page();
+        navigationPage.goToLearningFormat();
+        inputData.inputName();
+        inputData.inputIncorrectEmail();
+        inputData.inputPhoneNumber();
+        inputData.selectClass();
+        checkPage.checkResponse();
+    }
+
+    @Test
+    void checkFormTestWithoutName() {
+        openPage.openOg1Page();
+        navigationPage.goToLearningFormat();
+        inputData.inputEmail();
+        inputData.inputPhoneNumber();
+        inputData.selectClass();
+        checkPage.checkResponse();
+    }
+
+    @Test
+    void checkFormTestWithoutEmail() {
+        openPage.openOg1Page();
+        navigationPage.goToLearningFormat();
+        inputData.inputName();
+        inputData.inputPhoneNumber();
+        inputData.selectClass();
+        checkPage.checkResponse();
+    }
+}

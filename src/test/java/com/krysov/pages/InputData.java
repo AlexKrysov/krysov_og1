@@ -18,10 +18,20 @@ public class InputData {
             name.setValue("Алексей");
         });
     }
+    public void inputIncorrectName() {
+        step("Вводим валидное имя", () -> {
+            name.setValue("123!?_");
+        });
+    }
 
     public void inputEmail() {
         step("Вводим валидную почту", () -> {
             email.setValue("krysov-95@mail.ru");
+        });
+    }
+    public void inputIncorrectEmail() {
+        step("Вводим невалидную почту", () -> {
+            email.setValue("qqqq111111!*");
         });
     }
 
