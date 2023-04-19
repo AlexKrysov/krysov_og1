@@ -10,13 +10,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class NavigationTests extends TestBase {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
-        Configuration.browserSize = "1920x1080";
-    }
-
-
     @Test
     void checkFormTestPositive() {
         openPage.openOg1Page();
