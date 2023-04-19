@@ -19,7 +19,7 @@ public class InputData {
         });
     }
     public void inputIncorrectName() {
-        step("Вводим валидное имя", () -> {
+        step("Вводим невалидное имя", () -> {
             name.setValue("123!?_");
         });
     }
