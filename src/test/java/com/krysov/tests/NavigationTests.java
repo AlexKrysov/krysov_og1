@@ -1,15 +1,15 @@
 package com.krysov.tests;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
+import io.qameta.allure.Owner;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
 public class NavigationTests extends TestBase {
 
+    @DisplayName("Проверка заполнения формы с валидными данными")
+    @Owner("Krysov")
+    @Tag("PositiveFormTest")
     @Test
     void checkFormTestPositive() {
         openPage.openOg1Page();
@@ -20,7 +20,23 @@ public class NavigationTests extends TestBase {
         inputData.selectClass();
         checkPage.checkResponse();
     }
+    @DisplayName("Проверка заполнения формы с валидными, рандомными данными")
+    @Owner("Krysov")
+    @Tag("PositiveFormTest")
+    @Test
+    void checkFormTestPositiveRandomData() {
+        openPage.openOg1Page();
+        navigationPage.goToLearningFormat();
+        randomData.inputRandomName();
+        randomData.inputRandomEmail();
+        randomData.inputRandomPhone();
+        inputData.selectClass();
+        checkPage.checkResponse();
+    }
 
+    @DisplayName("Проверка заполнения формы с невалидными данными в поле 'Имя'")
+    @Owner("Krysov")
+    @Tag("NegativeFormTest")
     @Test
     void checkFormTestIncorrectName() {
         openPage.openOg1Page();
@@ -32,6 +48,9 @@ public class NavigationTests extends TestBase {
         checkPage.checkResponse();
     }
 
+    @DisplayName("Проверка заполнения формы с невалидными данными в поле 'Email'")
+    @Owner("Krysov")
+    @Tag("NegativeFormTest")
     @Test
     void checkFormTestIncorrectEmail() {
         openPage.openOg1Page();
@@ -43,6 +62,9 @@ public class NavigationTests extends TestBase {
         checkPage.checkResponse();
     }
 
+    @DisplayName("Проверка заполнения формы с пустым полем 'Имя'")
+    @Owner("Krysov")
+    @Tag("NegativeFormTest")
     @Test
     void checkFormTestWithoutName() {
         openPage.openOg1Page();
@@ -53,6 +75,9 @@ public class NavigationTests extends TestBase {
         checkPage.checkResponse();
     }
 
+    @DisplayName("Проверка заполнения формы с пустым полем 'Email'")
+    @Owner("Krysov")
+    @Tag("NegativeFormTest")
     @Test
     void checkFormTestWithoutEmail() {
         openPage.openOg1Page();

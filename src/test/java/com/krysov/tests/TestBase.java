@@ -7,6 +7,7 @@ import com.krysov.pages.CheckPage;
 import com.krysov.pages.InputData;
 import com.krysov.pages.NavigationPage;
 import com.krysov.pages.OpenPage;
+import com.krysov.randomData.RandomData;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -19,7 +20,7 @@ public class TestBase {
     InputData inputData = new InputData();
     OpenPage openPage = new OpenPage();
     CheckPage checkPage = new CheckPage();
-//    RandomData randomData = new RandomData();
+    RandomData randomData = new RandomData();
 
     @BeforeAll
     static void beforeAll() {
