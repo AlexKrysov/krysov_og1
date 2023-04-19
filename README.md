@@ -46,9 +46,9 @@
 
 
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/Krysov_Standard_Project/"> job </a>
+## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/Krysov_OG1/"> job </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/Krysov_Standard_Project/"><img src="images/screens/jenkins4.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/Krysov_OG1/"><img src="images/screens/jenkins.png" alt="Jenkins"/></a>
 </p>
 
 
@@ -64,7 +64,6 @@
 
 :woozy_face: REMOTE_DRIVER_URL (адрес удалённого драйвера)
 
-:cowboy_hat_face: THREADS (выбор количества потоков для запуска)
 
 ## 🏗️: Для запуска тестов из терминала необходимо заполнить junit-platform.properties или передать значение:
 
@@ -80,35 +79,35 @@
 
 :seven: ALLURE_NOTIFICATIONS_VERSION - (выбор версии allure)
 
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/Krysov_Standard_Project/3/allure/">Allure report</a>
+## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/Krysov_OG1/2/allure/#">Allure report</a>
 
 ## ⛅: Overview
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/overview4.png">
+<img title="Allure Overview Dashboard" src="images/screens/overview.png">
 </p>
 
 ## 🧪: Suites
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/suites5png.png">
+<img title="Allure Overview Dashboard" src="images/screens/suites.png">
 </p>
 
 ## 💹: Graphs
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/graphs4.png">
+<img title="Allure Overview Dashboard" src="images/screens/graphs.png">
 </p>
 
-## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Интеграция уведомлений с <a target="_blank" href="https://t.me/autotestsKrysov/45">Telegram</a>
+## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Интеграция уведомлений с <a target="_blank" href="https://t.me/autotestsKrysov/51">Telegram</a>
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/teleg4.png" >
+<img title="Allure Overview Dashboard" src="images/screens/tele.png" >
 </p>
 
-## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/2058/test-cases/16246?treeId=0">Allure TestOps</a>
-<img title="TestOps" src="images/screens/to5.png" >
+## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/22548">Allure TestOps</a>
+<img title="TestOps" src="images/screens/to.png" >
 
 
-## <img src="images/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-608">Jira</a>
-<img title="Jira" src="images/screens/jira4.png" >
+## <img src="images/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-679">Jira</a>
+<img title="Jira" src="images/screens/jira.png" >
 
 
 
@@ -116,4 +115,4 @@
 
 
 ## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Allure"/></a> Запись видео из Selenoid при прохождении автотеста:
-![Test](images/gif/gif4.gif)
+![Test](images/gif/gif.gif)
